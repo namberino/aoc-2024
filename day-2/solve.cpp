@@ -16,19 +16,7 @@ int main(int argc, char* argv[])
 
     while (std::getline(input_file, text))
     {
-        std::stringstream ss(text);
-        std::string word;
-        int c = 1;
         
-        while (ss >> word)
-        {
-            if (c % 2 != 0)
-                v1.push_back(stoi(word));
-            else
-                v2.push_back(stoi(word));
-
-            c++;
-        }
     }
 
     input_file.close();
