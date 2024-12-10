@@ -54,7 +54,7 @@ int match_diag(std::vector<std::vector<char> > words)
 {
     int count = 0;
 
-    // "- 3" to avoid segfaults
+    // "- 3" to avoid segfaults (because array out of bounds)
     for (int i = 0; i < words.size() - 3; i++)
     {
         for (int j = 0; j < words[0].size() - 3; j++)
