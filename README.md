@@ -2,6 +2,13 @@
 
 This is my first Advent of Code. This contains solutions to the AOC 2024 puzzles in C++.
 
+# Prerequisite softwares
+
+You will need to install some softwares before using this:
+
+- [Clang](https://clang.llvm.org/)
+- [GNU Make](https://www.gnu.org/software/make/)
+
 # Running the solutions
 
 You could go into the individual directory and run it using `make`. There are 4 Makefile rules:
