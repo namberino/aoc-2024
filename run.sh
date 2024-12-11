@@ -25,12 +25,6 @@ if [[ ! "$valid_dirs" =~ "$1" ]]; then
 fi
 
 # run the program
-if [[ "$2" = "run" ]]; then
-    cd $1
-    make run
-    cd ..
-else
-    cd $1
-    make test
-    cd ..
-fi
+cd $1
+make $2
+cd ..
