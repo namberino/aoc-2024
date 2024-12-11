@@ -45,14 +45,6 @@ int main(int argc, char* argv[])
         }
     }
 
-    // for (auto item : ordering_rules)
-    // {
-    //     std::cout << item.first << " : ";
-    //     for (auto element : item.second)
-    //         std::cout << element << " ";
-    //     std::cout << "\n";
-    // }
-
     // thank god it continues reading where it left off in the file
     while (std::getline(input_file, text))
     {
@@ -80,6 +72,7 @@ int main(int argc, char* argv[])
             // iterate through the rest of the vector
             for (int j = i + 1; j < update_pages.size(); j++)
             {
+                // check if current page number is in the map
                 if (std::find(curr_page_rules.begin(), curr_page_rules.end(), std::to_string(update_pages[j])) == curr_page_rules.end())
                 {
                     valid_update_list = false;
