@@ -29,8 +29,8 @@ int main(int argc, char* argv[])
         }
     }
 
+    // time complexity: O(n)
     int left_off_pos = disk_map.size() - 1;
-
     for (int i = 0; i <= left_off_pos; i++)
     {
         // free space found
