@@ -25,3 +25,7 @@ Alternatively, you could use the [run](./run.sh) script. This script allows you 
 ```
 Usage: ./run.sh [day-n] [run | test]
 ```
+
+# Documentation
+
+Each level solution has some comments on how the solution works.
