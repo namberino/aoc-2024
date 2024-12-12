@@ -9,7 +9,7 @@ void move_guard(std::vector<std::string>& area_map, int& distinct_visited_pos, i
     distinct_visited_pos++;
 
     int move_index = 0;
-    std::vector<std::vector<int> > move_dirs = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}}; // up, right, down, left
+    std::vector<std::vector<int>> move_dirs = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}}; // up, right, down, left
     std::vector<int> move_dir = move_dirs[0];
 
     // move simulation

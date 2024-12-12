@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
 
     std::ifstream input_file(argv[1]);
     std::string text;
-    std::map<std::string, std::vector<std::string> > ordering_rules;
+    std::map<std::string, std::vector<std::string>> ordering_rules;
     int sum_mid = 0;
 
     while (std::getline(input_file, text))

@@ -6,7 +6,7 @@ std::string match1 = "XMAS";
 std::string match2 = "SAMX";
 
 // match for "XMAS" pattern on row
-int match_row(std::vector<std::vector<char> > words)
+int match_row(std::vector<std::vector<char>> words)
 {
     int count = 0;
 
@@ -28,7 +28,7 @@ int match_row(std::vector<std::vector<char> > words)
 }
 
 // match for "XMAS" pattern on columns
-int match_col(std::vector<std::vector<char> > words)
+int match_col(std::vector<std::vector<char>> words)
 {
     int count = 0;
 
@@ -50,7 +50,7 @@ int match_col(std::vector<std::vector<char> > words)
 }
 
 // match for "XMAS" pattern on diagonals
-int match_diag(std::vector<std::vector<char> > words)
+int match_diag(std::vector<std::vector<char>> words)
 {
     int count = 0;
 
@@ -96,7 +96,7 @@ int main(int argc, char* argv[])
 
     std::ifstream input_file(argv[1]);
     std::string text;
-    std::vector<std::vector<char> > words;
+    std::vector<std::vector<char>> words;
 
     // create 2d vector
     while (std::getline(input_file, text))
