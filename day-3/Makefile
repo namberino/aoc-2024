@@ -11,7 +11,7 @@ run: compile
 test: compile
 	./$(OUTPUT) $(TEST_FILE)
 
-compile: solve.cpp
+compile: $(CPP_FILE)
 	$(CC) $(C_FLAGs) $(CPP_FILE) -o $(OUTPUT)
 
 clean:
