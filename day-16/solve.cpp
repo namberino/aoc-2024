@@ -11,6 +11,7 @@
 const int dir_row[] = {-1, 0, 1, 0};
 const int dir_col[] = {0, 1, 0, -1};
 
+// best-first search (prioritizes straight movement)
 int dijkstra(std::vector<std::string>& maze, std::pair<int, int>& start, std::pair<int, int>& end)
 {
     int rows = maze.size();
@@ -25,7 +26,7 @@ int dijkstra(std::vector<std::string>& maze, std::pair<int, int>& start, std::pa
     // distances initialized to infinity (except the starting point for each direction)
     std::vector<std::vector<std::vector<int>>> dist(rows, std::vector<std::vector<int>>(cols, std::vector<int>(4, std::numeric_limits<int>::max())));
 
-    // starting position and all 4 directions next to that starting position (0 to 3) has a cost of 0
+    // all 4 directions the starting position could be facing (0 to 3) has a cost of 0
     for (int i = 0; i < 4; i++)
     {
         dist[start.first][start.second][i] = 0;
